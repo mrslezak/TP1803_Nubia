@@ -2,7 +2,7 @@
 rm .version
 
 clear
-cd ~/jerry/
+cd ~/TP1803_Nubia/
 #cp Makefile.clang11 Makefile
 
 rm -rf out-clang
@@ -23,17 +23,17 @@ export CXXFLAGS="$CXXFLAGS -fPIC"
 export DTC_EXT=dtc
 
 #DEFCONFIG="vendor/NX659J_defconfig"
-DEFCONFIG="sm8150-perf_defconfig"
+DEFCONFIG="defconfig"
 
 # Paths
 KERNEL_DIR=`pwd`
-ZIMAGE_DIR="~/jerry/out-clang/arch/arm64/boot/"
+ZIMAGE_DIR="~/TP1803_Nubia/out-clang/arch/arm64/boot/"
 
 # Kernel Details
 VER="-Beta1-GPUOC"
 
 # Vars
-BASE_AK_VER="Jerry"
+BASE_AK_VER="MOD-TP1803"
 AK_VER="$BASE_AK_VER$VER"
 export LOCALVERSION=~`echo $AK_VER`
 export ARCH=arm64
@@ -68,7 +68,7 @@ ls -a
 
 # Make a dtb file
 #find ~/RM5G/out-clang/arch/arm64/boot/dts/vendor/qcom -name '*.dtb' -exec cat {} + > ~/RM5G/out-clang/arch/arm64/boot/dtb
-cd ~/jerry/out-clang/arch/arm64/boot/
+cd ~/TP1803_Nubia/out-clang/arch/arm64/boot/
 #cat dts/vendor/qcom/kona.dtb dts/vendor/qcom/kona-v2.dtb dts/vendor/qcom/kona-v2.1.dtb > dtb
 #ls -a
 
